@@ -24,27 +24,27 @@ h3{
 @font-face{
 
 	font-family: "Open-sans";
-	src: url('../fonts/OpenSans-Regular.ttf');
+	src: url('../font/OpenSans-Regular.ttf');
 }
 
 @font-face{
 
 	font-family: "Open-sansbold";
-	src: url('../fonts/OpenSans-Bold.ttf');
+	src: url('../font/OpenSans-Bold.ttf');
 
 }
 
 @font-face{
 
 	font-family: "League";
-	src: url('../fonts/LeagueGothic-Regular.ttf');
+	src: url('../font/LeagueGothic-Regular.ttf');
 
 }
 
 @font-face{
 
 	font-family: "Oxygen";
-	src: url('../fonts/Oxygen-Bold.ttf');
+	src: url('../font/Oxygen-Bold.ttf');
 
 }
 
