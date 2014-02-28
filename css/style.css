@@ -1,0 +1,358 @@
+body{
+
+	background: #ffffff;
+	color: #666666;
+	font-family: "Open-sans";
+	font-size: 14px;
+}
+
+h1{
+
+	font-size: 55px;
+	font-family: "Oxygen";
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 5px;
+
+}
+
+h3{
+
+	font-family: "Open-sans";
+}
+
+@font-face{
+
+	font-family: "Open-sans";
+	src: url('../font/OpenSans-Regular.ttf');
+}
+
+@font-face{
+
+	font-family: "Open-sansbold";
+	src: url('../font/OpenSans-Bold.ttf');
+
+}
+
+@font-face{
+
+	font-family: "League";
+	src: url('../font/LeagueGothic-Regular.ttf');
+
+}
+
+@font-face{
+
+	font-family: "Oxygen";
+	src: url('../font/Oxygen-Bold.ttf');
+
+}
+
+
+li{
+
+	list-style: none;
+}
+
+.padding-bottom60{
+
+	padding-bottom: 60px;
+}
+
+.push-top80{
+
+	margin-top: 80px;
+}
+
+.push-top100{
+
+	margin-top: 100px;
+}
+
+.push-top60{
+
+	margin-top: 60px;
+}
+
+.push-top40{
+
+	margin-top: 40px;
+}
+
+.push-top20{
+
+	margin-top: 20px;
+}
+
+.push-bottom60{
+
+	margin-bottom: 60px;
+}
+
+.push-bottom40{
+
+	margin-bottom: 40px;
+}
+
+
+.text-center{
+
+	text-align: center;
+}
+
+.navbar-brand img{
+
+	width: 150px;
+}
+.navbar{
+
+	min-height: 76px;
+/*	border-top: 2px solid #1abc9c;*/
+	background: #2f3238;
+	border-bottom: 1px solid #434447;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a{
+
+	line-height: 41px;
+	color: #ffffff;
+	transition: all 0.2s ease-out 0s;
+}
+
+.navbar-nav > li{
+
+	margin-left: 20px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+
+	color: #ffffff;
+	background: none;
+}
+
+
+.navbar-default .navbar-nav > .active{
+
+	border-bottom: 4px solid #1abc9c;
+}
+.banner{
+
+	background: url("../images/banner.png") no-repeat;
+	height: 695px;
+	padding-top: 125px;
+	margin-top: 76px; 
+	color: #ffffff;
+}
+
+.percent{
+
+	display: inline-block;
+	line-height: 110px;
+	z-index: 2;
+}
+
+.chart{
+
+	position: relative;
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	text-align: center;
+}
+
+.chart canvas{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.circle-text{
+
+	margin-top: 15px;
+	width: 100px;
+	text-align: center;
+}
+
+.skill-set{
+
+	margin-left: 10%;
+}
+
+.jarl-text{
+
+	  background: url('../images/jarl_text.png') no-repeat;
+	  height: 99px;
+	  width: 520px;
+	  margin-left: auto;
+	  margin-right: auto;
+
+}
+.jarl-text2{
+
+	font-size: 18px;
+	text-shadow: 0 1px 2px #5e5e5e;
+}
+
+.banner-hr{
+
+	width: 130px;
+	box-shadow: 0 1px 2px #5e5e5e;
+}
+
+.btn-contact{
+
+	background: #1abc9c;
+	color: #ffffff;
+	padding: 11px 20px;
+	border-radius: 0px;
+	font-size: 16px;
+}
+
+.btn-contact:hover{
+
+	background: #0ea688;
+	color: #ffffff;
+}
+
+.btn-contact:focus{
+
+	outline: 0;
+	border-color: none;
+	color: #ffffff;
+}
+
+.back-top {
+	position: fixed;
+	bottom: 8px;
+	right: 64px;
+
+}
+
+.back-top span {
+	width: 51px !important;
+	height: 45px;
+	display: block;
+	margin-bottom: 7px;
+	padding-top: 16px;
+	padding-left: 19px;
+	background: #2a2d32;
+	color: #1abc9c;
+}
+
+.back-top span:hover{
+
+	color: #ffffff;
+	background: #1abc9c;
+	text-decoration: none;
+
+}
+
+.prof-pic img{
+
+	border: 6px solid #29292b;
+	border-radius: 120px;
+}
+
+#about-content{
+
+	padding:120px 0px;
+	background: #2f3238;
+	color: #7F8289;
+}
+
+#portfolio-content{
+
+	padding:120px 0px;
+}
+
+#portfolio-content h1{
+
+	color: #666666;
+}
+
+#contact-content{
+
+	padding:80px 0px;
+	background: #2f3238;
+	color: #7F8289;
+}
+
+
+#Grid{
+
+	margin-left: 5%;
+}
+
+#Grid .mix{
+    opacity: 0;
+    display: none;
+}
+
+#Grid .mix img{
+
+	width: 252px;
+    height: 190px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.controls li{
+
+	padding-right: 20px;
+	display: inline;
+}
+
+.controls ul{
+
+	text-align: center;
+}
+
+.controls li:hover{
+
+	cursor: pointer;
+}
+
+.controls li.active{
+
+	color: #1abc9c;
+}
+
+.border{
+
+	background:  #1abc9c;
+	height: 3px;
+	width: 100px;
+	margin: auto;
+}
+
+
+.contact-form .form-control{
+
+	border-radius: 0px;
+	background: #2a2d32;
+	border: 0px;
+	color: #ffffff;
+	box-shadow: none;
+}
+
+.contact-form input[type="text"]{
+
+	height: 40px;
+}
+
+.btn-submit{
+
+	background: #2a2d32;
+	border-radius: 0px;
+	padding: 10px 29px;
+	color: #999999;
+}
+
+.btn-submit:hover{
+
+	background: #1abc9c;
+	color: #ffffff;
+}
