@@ -24,27 +24,27 @@ h3{
 @font-face{
 
 	font-family: "Open-sans";
-	src: url('../font/OpenSans-Regular.ttf');
+	src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face{
 
 	font-family: "Open-sansbold";
-	src: url('../font/OpenSans-Bold.ttf');
+	src: url('../fonts/OpenSans-Bold.ttf');
 
 }
 
 @font-face{
 
 	font-family: "League";
-	src: url('../font/LeagueGothic-Regular.ttf');
+	src: url('../fonts/LeagueGothic-Regular.ttf');
 
 }
 
 @font-face{
 
 	font-family: "Oxygen";
-	src: url('../font/Oxygen-Bold.ttf');
+	src: url('../fonts/Oxygen-Bold.ttf');
 
 }
 
@@ -231,6 +231,11 @@ li{
 
 }
 
+.back-top a:focus, .back-top a:hover{
+
+	text-decoration: none;
+}
+
 .back-top span {
 	width: 51px !important;
 	height: 45px;
@@ -246,8 +251,6 @@ li{
 
 	color: #ffffff;
 	background: #1abc9c;
-	text-decoration: none;
-
 }
 
 .prof-pic img{
