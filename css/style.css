@@ -16,9 +16,14 @@ h1{
 
 }
 
-h3{
+h3, h2{
 
 	font-family: "Open-sans";
+}
+
+h2{
+
+	font-size: 40px;
 }
 
 @font-face{
@@ -231,7 +236,7 @@ li{
 
 }
 
-.back-top a:focus, .back-top a:hover{
+.back-top a:hover,  .back-top a:focus{
 
 	text-decoration: none;
 }
@@ -264,11 +269,16 @@ li{
 	padding:120px 0px;
 	background: #2f3238;
 	color: #7F8289;
+	position: relative;
+	overflow: hidden;
 }
 
 #portfolio-content{
 
 	padding:120px 0px;
+	position: relative;
+	overflow: hidden;
+
 }
 
 #portfolio-content h1{
@@ -281,6 +291,9 @@ li{
 	padding:80px 0px;
 	background: #2f3238;
 	color: #7F8289;
+	position: relative;
+	overflow: hidden;
+
 }
 
 
@@ -357,5 +370,40 @@ li{
 .btn-submit:hover{
 
 	background: #1abc9c;
+	color: #ffffff;
+}
+
+.first-parallax{
+
+	background: url('../images/parallax2.jpg') no-repeat fixed;
+	position: absolute;
+	height: 300px;
+    left: 0px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+.second-parallax{
+
+	background: url('../images/parallax3.jpg') no-repeat fixed;
+	position: absolute;
+	height: 300px;
+    left: 0px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+.parallax-parent{
+
+	height: 300px;
+	position: relative;
+	/*padding:120px 0px;*/
+}
+
+.parallax-text{
+
+	text-shadow: 0 1px 2px #5e5e5e;
 	color: #ffffff;
 }

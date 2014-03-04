@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+	$(this).scrollTop(0);
 	var green ="#1abc9c";
 	var black ="#2f3238"; 
 	$('.chart').easyPieChart({

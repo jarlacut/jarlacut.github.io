@@ -54,7 +54,7 @@
       </div>
     </div>
 
-	<div class="banner text-center">
+	<div class="banner text-center" data-velocity="50">
 		<div data-scrollReveal='enter top after 0.10s' >
 			<p class="jarl-text push-top60"></p>
 			<hr class="banner-hr push-top40">
@@ -66,7 +66,7 @@
 			<a href="#contact-content"><button type="button" class="btn btn-contact push-top40">Contact Me</button></a>
 		</div>
 	</div>
-
+	<div class="clearfix"></div>
 	<section id="about-content">
 			<div class="container">
 				<h1 data-scrollReveal='enter top after 0.10s' class="text-center">ABOUT</h1>
@@ -116,8 +116,14 @@
 				</div>
 			</div>
 	</section>
-
-	<section id="portfolio-content">
+	<section class="parallax-parent">
+			<div class="parallax first-parallax" data-velocity="-.5">
+				<div class="container parallax-text">
+					<h2 class="push-top100">“Design is not just what it looks like and feels like. Design is how it works.”</br><h3>— Steve Jobs</h3<</h2>
+				</div>
+			</div>
+	</section>
+	<section id="portfolio-content">		
 			<div class="container">
 				<h1 data-scrollReveal='enter top after 0.10s' class="text-center">PORTFOLIO</h1>
 				<div data-scrollReveal='enter top after 0.10s' class="border"></div>
@@ -141,6 +147,14 @@
 							<li class="mix category_2" data-cat="2"><img src="images/g2.png"></li>
 							<li class="mix category_3" data-cat="3"><img src="images/l3.png"></li>
 						</ul>
+				</div>
+			</div>
+	</section>
+	<section class="parallax-parent">
+			<div class="parallax second-parallax" data-velocity="-.3">
+				<div class="parallax-text  container">
+					<h2 class="push-top100">"If we want users to like our software, we should design it to behave like a likeable person."</br><h3>
+					— Alan Cooper</h3></h2>
 				</div>
 			</div>
 	</section>
@@ -176,7 +190,7 @@
 		<div class="container text-center push-top60">
 			<a data-scrollReveal='enter left after 0.10s' href=""><img src="images/fb-icon.png"></a>
 			<a data-scrollReveal='enter left after 0.30s'href=""><img src="images/twitter-icon.png"></a>
-			<a data-scrollReveal='enter left after 0.60s' href=""><img src="images/google-icon.png"></a>
+			<a data-scrollReveal='enter left after 0.60s'href=""><img src="images/google-icon.png"></a>
 			<a data-scrollReveal='enter left after 0.90s' href=""><img src="images/linkedin-icon.png"></a>
 			<p class="push-top40">Copyright © 2014 jarlacaut</p>
 			<p>All rights Reserved</p>
@@ -194,6 +208,12 @@
 	<script src="js/jquery.mixitup.min.js"></script>
 	<script src="js/scrollReveal.js"></script>
 	<script src="js/nprogress.js"></script>
-
+	<script src="js/jquery.scrolly.js"></script>
+	<script src="js/waypoints.js"></script>
+	<script>
+    $(document).ready(function(){
+       $('.parallax').scrolly({bgParallax: true});
+    });
+</script>
 </body>
 </html>
