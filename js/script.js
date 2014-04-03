@@ -9,16 +9,22 @@ $(document).ready(function () {
          lineWidth: 4,
          lineCap: "round",
          scaleColor: black,
-         trackColor: black
+         trackColor: black,
+         animate: false
     });
 
     $('#Grid').mixitup();
-
+    $('.parallax').scrolly({bgParallax: true});
 
      window.scrollReveal = new scrollReveal();
 
 
 	/*----------- change class when scroll ----------*/
+	// $('.chart').data('easyPieChart').disableAnimation();
+	$('#about-content').waypoint(function() {
+
+			
+	});
 
 	// $('#about-content').waypoint(function(direction) {
 	//   $('.navbar-nav li').removeClass('active');

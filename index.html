@@ -31,7 +31,6 @@
 <body>
 
 	<!-- Start Navigation -->
-
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -55,23 +54,23 @@
     </div>
 
 	<div class="banner text-center" data-velocity="50">
-		<div data-scrollReveal='enter top after 0.10s' >
+		<div data-scrollReveal='enter top after 1.7s' >
 			<p class="jarl-text push-top60"></p>
 			<hr class="banner-hr push-top40">
 		</div>
-		<div data-scrollReveal='enter left after 0.70s' >
+		<div data-scrollReveal='enter left after 2s' >
 			<p class="jarl-text2 push-top40">I'm a Web Designer & Front-end Developer living in Cebu.</p>
 		</div>
-		<div data-scrollReveal='enter bottom after 1.20s'>
+		<div data-scrollReveal='enter bottom after 2.4s'>
 			<a href="#contact-content"><button type="button" class="btn btn-contact push-top40">Contact Me</button></a>
 		</div>
 	</div>
 	<div class="clearfix"></div>
 	<section id="about-content">
 			<div class="container">
-				<h1 data-scrollReveal='enter top after 0.10s' class="text-center">ABOUT</h1>
-				<div data-scrollReveal='enter top after 0.10s' class="border"></div>
-				<div data-scrollReveal='enter top after 0.40s'>
+				<h1 data-scrollReveal='enter after 0.10s' class="text-center">ABOUT</h1>
+				<div data-scrollReveal='enter after 0.10s' class="border"></div>
+				<div data-scrollReveal='enter after 0.40s'>
 					<div class="col-md-3 prof-pic pull-left">
 						<img src="images/prof-pic.png">
 					</div>
@@ -82,7 +81,7 @@
 					</div>
 				</div>
 				<div class="clearfix"></div>
-				<div data-scrollReveal='enter left after 0.40s' class="col-md-12 push-top80 skill-set">
+				<div id="skills" data-scrollReveal='enter after 0.40s' class="col-md-12 push-top80 skill-set">
 					<div class="col-md-2">
 						<span class="chart" data-percent="90">
 							<span class="percent">90%</span>
@@ -125,9 +124,9 @@
 	</section>
 	<section id="portfolio-content">		
 			<div class="container">
-				<h1 data-scrollReveal='enter top after 0.10s' class="text-center">PORTFOLIO</h1>
-				<div data-scrollReveal='enter top after 0.10s' class="border"></div>
-					<div data-scrollReveal='enter top after 0.40s'>
+				<h1 data-scrollReveal='enter after 0.10s' class="text-center">PORTFOLIO</h1>
+				<div data-scrollReveal='enter after 0.10s' class="border"></div>
+					<div data-scrollReveal='enter after 0.40s'>
 						<div class="controls push-top60">	
 							<ul>
 								<li class="filter" data-filter="all">ALL</li>
@@ -160,9 +159,9 @@
 	</section>
 	<section id="contact-content">
 			<div class="container">
-				<h1 data-scrollReveal='enter top after 0.10s' class="text-center">CONTACT</h1>
-				<div data-scrollReveal='enter top after 0.10s' class="border"></div>
-					<div data-scrollReveal='enter top after 0.30s' class="col-md-6 push-top60">
+				<h1 data-scrollReveal='enter after 0.10s' class="text-center">CONTACT</h1>
+				<div data-scrollReveal='enter after 0.10s' class="border"></div>
+					<div data-scrollReveal='enter after 0.30s' class="col-md-6 push-top60">
 						<form class="contact-form">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Full Name">
@@ -176,7 +175,7 @@
 							<button type="button" class="btn btn-submit">Submit</button>
 						</form>
 					</div>
-					<div data-scrollReveal='enter top after 0.60s' class="col-md-4 pull-right push-top60 push-bottom60">
+					<div data-scrollReveal='enter after 0.60s' class="col-md-4 pull-right push-top60 push-bottom60">
 					<h3>CONTACT DETAILS</h3>
 					<p>09123456789</p>
 					</br>
@@ -188,10 +187,10 @@
 	</section>
 	<div class="footer">
 		<div class="container text-center push-top60">
-			<a data-scrollReveal='enter left after 0.10s' href=""><img src="images/fb-icon.png"></a>
-			<a data-scrollReveal='enter left after 0.30s'href=""><img src="images/twitter-icon.png"></a>
-			<a data-scrollReveal='enter left after 0.60s'href=""><img src="images/google-icon.png"></a>
-			<a data-scrollReveal='enter left after 0.90s' href=""><img src="images/linkedin-icon.png"></a>
+			<a data-scrollReveal='enter after 0.10s' href=""><img src="images/fb-icon.png"></a>
+			<a data-scrollReveal='enter after 0.30s'href=""><img src="images/twitter-icon.png"></a>
+			<a data-scrollReveal='enter after 0.60s'href=""><img src="images/google-icon.png"></a>
+			<a data-scrollReveal='enter after 0.90s' href=""><img src="images/linkedin-icon.png"></a>
 			<p class="push-top40">Copyright © 2014 jarlacaut</p>
 			<p>All rights Reserved</p>
 		</div>
@@ -201,7 +200,7 @@
 	</p>
 	<!-- Javascript
 	================================================== -->
-	<script type="text/jscript" src="js/jquery-1.10.js"></script>
+	<script type="text/jscript" src="js/jquery-1.5.min.js"></script>
 	<script src="js/script.js"></script>    
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easypiechart.min.js"></script>
@@ -210,10 +209,9 @@
 	<script src="js/nprogress.js"></script>
 	<script src="js/jquery.scrolly.js"></script>
 	<script src="js/waypoints.js"></script>
-	<script>
-    $(document).ready(function(){
-       $('.parallax').scrolly({bgParallax: true});
-    });
-</script>
+	<script src='js/query-loader.js'></script>
+	<script type="text/javascript">
+	 QueryLoader.init({});
+	</script>
 </body>
 </html>
