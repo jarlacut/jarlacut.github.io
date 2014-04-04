@@ -143,10 +143,9 @@ li{
 	border-bottom: 4px solid #1abc9c;
 }
 .banner{
-
 	background: url("../images/banner.png") no-repeat;
-	height: 695px;
 	padding-top: 125px;
+	padding-bottom: 210px;
 	margin-top: 76px; 
 	color: #ffffff;
 }
