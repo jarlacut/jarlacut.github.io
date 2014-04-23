@@ -16,9 +16,13 @@ $(document).ready(function () {
     $('#Grid').mixitup();
     $('.parallax').scrolly({bgParallax: true});
 
-     window.scrollReveal = new scrollReveal();
-
-
+		// for reveal
+    	var config = { init:false};
+ 
+    	window.scrollReveal = new scrollReveal(config);
+   
+        scrollReveal.init();
+    
 	/*----------- change class when scroll ----------*/
 	// $('.chart').data('easyPieChart').disableAnimation();
 	$('#about-content').waypoint(function() {
