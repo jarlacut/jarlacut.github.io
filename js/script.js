@@ -19,7 +19,6 @@ $(document).ready(function () {
     	var config = { init:false};
     	window.scrollReveal = new scrollReveal(config);
  		window.onload = function () { scrollReveal.init() }
-
 	/*----------- change class when scroll ----------*/
 	// $('.chart').data('easyPieChart').disableAnimation();
 	$('#about-content').waypoint(function() {
