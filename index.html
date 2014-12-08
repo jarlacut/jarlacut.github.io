@@ -31,7 +31,10 @@
 <body>
 
 	<!-- Start Navigation -->
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+	<div class="banner text-center parallax">
+			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,7 +47,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active home-content"><a href="#home-content">Home</a></li>
+            <li class="home-content"><a href="#home-content">Home</a></li>
             <li class="about"><a href="#about-content">About</a></li>
             <li class="portfolio"><a href="#portfolio-content">Portfolio</a></li>
             <li class="contact"><a href="#contact-content">Contact</a></li>
@@ -52,14 +55,11 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
-	<div class="banner text-center parallax" data-velocity="-.5">
 		<div data-scrollReveal='enter top after 1.7s' >
-			<p class="jarl-text push-top60"></p>
-			<hr class="banner-hr push-top40">
+			<p class="jarl-text push-top80"></p>
 		</div>
 		<div data-scrollReveal='enter left after 2s' >
-			<p class="jarl-text2 push-top40">I'm a Web Designer & Front-end Developer living in Cebu.</p>
+			<p class="jarl-text2 push-top20">I'm a Web Designer & Front-end Developer living in Cebu.</p>
 		</div>
 		<div data-scrollReveal='enter bottom after 2.4s'>
 			<a href="#contact-content"><button type="button" class="btn btn-contact push-top40">Contact Me</button></a>
@@ -68,20 +68,21 @@
 	<div class="clearfix"></div>
 	<section id="about-content">
 			<div class="container">
-				<h1 data-scrollReveal='enter after 0.10s' class="text-center">ABOUT</h1>
-				<div data-scrollReveal='enter after 0.10s' class="border"></div>
-				<div data-scrollReveal='enter after 0.40s'>
+				<h1 data-scrollReveal='enter bottom after 1.1s' class="text-center">ABOUT</h1>
+				<div data-scrollReveal='enter bottom after 1.1s' class="border"></div>
+				<div class="about-desc col-md-12 push-top60" data-scrollReveal='enter bottom after 1.5s'>
 					<div class="col-md-3 prof-pic pull-left">
-						<img src="images/prof-pic.png">
+						<img src="images/prof-pic.jpg">
 					</div>
-					<div class="col-md-9 pull-right push-top60 push-bottom60">
-					<p>I am a web designer and front-end developer living in Cebu, Philippines. I started designing website during my senior year in college.</p>
+					<div class="col-md-9 pull-right push-bottom60">
+					<p>Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.
 
-					<p>I am also a freelancer.</p>
+					Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.
+					</p>
 					</div>
 				</div>
 				<div class="clearfix"></div>
-				<div id="skills" data-scrollReveal='enter after 0.40s' class="col-md-12 push-top80 skill-set">
+				<div id="skills" data-scrollReveal='enter after 1.1s' class="col-md-12 push-top80 skill-set">
 					<div class="col-md-2">
 						<span class="chart" data-percent="90">
 							<span class="percent">90%</span>
@@ -115,18 +116,16 @@
 				</div>
 			</div>
 	</section>
-	<section class="parallax-parent">
-			<div class="parallax first-parallax" data-velocity="-.3">
+	<aside class="parallax first-parallax">
 				<div class="container parallax-text">
-					<h2 class="push-top180">“Design is not just what it looks like and feels like. Design is how it works.”</br><h3>— Steve Jobs</h3></h2>
+					<h2 data-scrollReveal='enter bottom after 1s'>“Design is not just what it looks like and feels like. Design is how it works.”</br><h3 data-scrollReveal='enter left after 1.3s'>— Steve Jobs</h3></h2>
 				</div>
-			</div>
-	</section>
+	</aside>
 	<section id="portfolio-content">		
 			<div class="container">
-				<h1 data-scrollReveal='enter after 0.10s' class="text-center">PORTFOLIO</h1>
-				<div data-scrollReveal='enter after 0.10s' class="border"></div>
-					<div data-scrollReveal='enter after 0.40s'>
+				<h1 data-scrollReveal='enter bottom after 1.1s' class="text-center">PORTFOLIO</h1>
+				<div data-scrollReveal='enter bottom after 1.1s' class="border"></div>
+					<div data-scrollReveal='enter after 1.3s'>
 						<div class="controls push-top60">	
 							<ul>
 								<li class="filter" data-filter="all">ALL</li>
@@ -138,29 +137,27 @@
 						<div class="clearfix"></div>	
 						<ul id="Grid" class="push-top40">
 							<li class="mix category_1" data-cat="1"><img src="images/w1.png"></li>
-							<li class="mix category_3" data-cat="3"><img src="images/l1.png"></li>
-							<li class="mix category_2" data-cat="2"><img src="images/g1.png"></li>
-							<li class="mix category_1" data-cat="1"><img src="images/w2.png"></li>
-							<li class="mix category_1" data-cat="1"><img src="images/w3.png"></li>
-							<li class="mix category_3" data-cat="3"><img src="images/l2.png"></li>
-							<li class="mix category_2" data-cat="2"><img src="images/g2.png"></li>
-							<li class="mix category_3" data-cat="3"><img src="images/l3.png"></li>
+							<li class="mix category_3" data-cat="3"><img src="images/w1.png"></li>
+							<li class="mix category_2" data-cat="2"><img src="images/w1.png"></li>
+							<li class="mix category_1" data-cat="1"><img src="images/w1.png"></li>
+							<li class="mix category_1" data-cat="1"><img src="images/w1.png"></li>
+							<li class="mix category_3" data-cat="3"><img src="images/w1.png"></li>
+							<li class="mix category_2" data-cat="2"><img src="images/w1.png"></li>
+							<li class="mix category_3" data-cat="3"><img src="images/w1.png"></li>
 						</ul>
 				</div>
 			</div>
 	</section>
-	<section class="parallax-parent">
-			<div class="parallax second-parallax" data-velocity="-.3">
+	<aside class="parallax second-parallax">
 				<div class="parallax-text container">
-					<h2 class="push-top180">"If we want users to like our software, we should design it to behave like a likeable person."</br><h3>— Alan Cooper</h3></h2>
+					<h2  data-scrollReveal='enter bottom after 1s'>"If we want users to like our software, we should design it to behave like a likeable person."</br><h3 data-scrollReveal='enter left after 1.3s'>— Alan Cooper</h3></h2>
 				</div>
-			</div>
-	</section>
+	</aside>
 	<section id="contact-content">
 			<div class="container">
-				<h1 data-scrollReveal='enter after 0.10s' class="text-center">CONTACT</h1>
-				<div data-scrollReveal='enter after 0.10s' class="border"></div>
-					<div data-scrollReveal='enter after 0.30s' class="col-md-6 push-top60">
+				<h1 data-scrollReveal='enter bottom after 0.70s' class="text-center">CONTACT</h1>
+				<div data-scrollReveal='enter after 0.70s' class="border"></div>
+					<div data-scrollReveal='enter left after 1.1s' class="col-md-6 push-top60">
 						<form class="contact-form">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Full Name">
@@ -174,7 +171,7 @@
 							<button type="button" class="btn btn-submit">Submit</button>
 						</form>
 					</div>
-					<div data-scrollReveal='enter after 0.60s' class="col-md-4 pull-right push-top60 push-bottom60">
+					<div data-scrollReveal='enter right after 1.3s' class="col-md-4 pull-right push-top60 push-bottom60">
 					<h3>CONTACT DETAILS</h3>
 					<p>09123456789</p>
 					</br>
@@ -205,10 +202,10 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<script src="js/jquery.mixitup.min.js"></script>
 	<script src="js/scrollReveal.js"></script>
-	<script src="js/nprogress.js"></script>
 	<script src="js/jquery.scrolly.js"></script>
-	<script src="js/waypoints.js"></script>
 	<script src='js/query-loader.js'></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/waypoints.js"></script>	
 	<script type="text/javascript">
 		QueryLoader.init({});
 	</script>

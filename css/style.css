@@ -38,22 +38,14 @@ h2{
 	src: url('../fonts/OpenSans-Bold.ttf');
 
 }
-
-@font-face{
-
-	font-family: "League";
-	src: url('../fonts/LeagueGothic-Regular.ttf');
-
+.popup{
+	display: none !important;
 }
 
-@font-face{
-
-	font-family: "Oxygen";
-	src: url('../fonts/Oxygen-Bold.ttf');
-
+a:active,
+a:focus{
+	outline: 0;
 }
-
-
 li{
 
 	list-style: none;
@@ -117,21 +109,28 @@ li{
 
 	min-height: 76px;
 /*	border-top: 2px solid #1abc9c;*/
-	background: #2f3238;
-	border-bottom: 1px solid #434447;
+	/*background: #2f3238;*/
+	background: transparent;
+	/*border-bottom: 1px solid #434447;*/
+	border-bottom: 0;
 	margin-bottom: 0px;
 }
 
+.navbar .container{
+	margin-top: 20px;
+}
 .navbar-default .navbar-nav > li > a{
-
-	line-height: 41px;
+	padding: 7px 10px;
 	color: #ffffff;
-	transition: all 0.2s ease-out 0s;
+		transition: all 0.2s ease-out 0s;
+}
+.navbar-nav{
+	margin-top: 20px;
 }
 
 .navbar-nav > li{
 
-	margin-left: 20px;
+	margin-left: 37px;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
@@ -141,18 +140,32 @@ li{
 	background: none;
 }
 
+.navbar-bg{
+	/*background: rgba(0, 0, 0, 0.8);*/
+	background: #26292e;
+	opacity: 1;
+		transition: all 1s ease-out 0s;
+}
+.remove-mt{
+	margin-top: 0 !important;
+		transition: all 1s ease-out 0s;
+}
 
-.navbar-default .navbar-nav > .active{
-
-	border-bottom: 4px solid #1abc9c;
+.navbar-default .navbar-nav > .active a{
+	border: 1px solid #1abc9c;
+	border-radius: 3px;
+	/*border-bottom: 3px solid #1abc9c;*/
 }
 .banner{
 	background: url("../images/banner2.jpg") no-repeat;
-	padding-top: 125px;
-	padding-bottom: 233px;
-	margin-top: 76px; 
+	padding-top: 200px;
+	padding-bottom: 310px;
+	/*margin-top: 76px; */
 	color: #ffffff;
-	background-position: 50% 0;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
 }
 
 .percent{
@@ -202,13 +215,11 @@ li{
 .jarl-text2{
 
 	font-size: 18px;
-	text-shadow: 0 1px 1px #3e3e3e;
 }
 
 .banner-hr{
 
 	width: 130px;
-	box-shadow: 0 1px 2px #5e5e5e;
 }
 
 .btn-contact{
@@ -263,9 +274,8 @@ li{
 }
 
 .prof-pic img{
-
-	border: 6px solid #29292b;
-	border-radius: 120px;
+	border: 5px solid #29292b;
+	width: 260px;
 }
 
 #about-content{
@@ -277,22 +287,22 @@ li{
 	overflow: hidden;
 }
 
-#portfolio-content{
-
-	padding:120px 0px;
-	position: relative;
-	overflow: hidden;
-
+.about-desc .col-md-9 p{
+	line-height: 24px;
+	margin-left: 35px;
+	text-align: justify;
 }
 
-#portfolio-content h1{
-
-	color: #666666;
+#portfolio-content{
+	background: #22262b;
+	padding: 120px 0px;
+	position: relative;
+	overflow: hidden;
 }
 
 #contact-content{
 
-	padding:80px 0px;
+	padding:120px 0px;
 	background: #2f3238;
 	color: #7F8289;
 	position: relative;
@@ -300,23 +310,27 @@ li{
 
 }
 
-
 #Grid{
-
-	margin-left: 5%;
+	padding-left: 0;
+	/*margin-left: 5%;*/
 }
 
 #Grid .mix{
     opacity: 0;
     display: none;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#Grid .mix:nth-child(3n){
+	margin-right: 0;
 }
 
 #Grid .mix img{
-
-	width: 252px;
-    height: 190px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+	height: auto;
+	width: 100%;
 }
 
 .controls li{
@@ -377,38 +391,32 @@ li{
 	color: #ffffff;
 }
 
-.first-parallax{
+.first-parallax, .second-parallax{
+	padding: 200px 0;
+	color: #ffffff;
+	background-attachment: fixed !important; 
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	background-position: 50% 0 !important;
+}
 
-	background: url('../images/parallax2.jpg') no-repeat fixed;
-	position: absolute;
-	height: 500px;
-    left: 0px;
-    margin: 0;
-    top: 0;
-    width: 100%;
+.first-parallax{
+	background: url('../images/parallax2.jpg') no-repeat;
 }
 
 .second-parallax{
-
-	background: url('../images/parallax3.jpg') no-repeat fixed;
-	position: absolute;
-	height: 500px;
-    left: 0px;
-    margin: 0;
-    top: 0;
-    width: 100%;
+	background: url('../images/parallax3.jpg') no-repeat;
 }
 
 .parallax-parent{
-
-	height: 500px;
+	min-height: 500px;
 	position: relative;
-	/*padding:120px 0px;*/
+	padding:300px 0px;
 }
 
 .parallax-text{
 
-	text-shadow: 0 1px 2px #5e5e5e;
 	color: #ffffff;
 }
 

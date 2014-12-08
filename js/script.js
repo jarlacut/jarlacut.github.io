@@ -1,30 +1,43 @@
-
 $(document).ready(function () {
-	$(this).scrollTop(0);
+	$(window).scrollTop(0);
+
 	var green ="#1abc9c";
 	var black ="#2f3238"; 
-	$('.chart').easyPieChart({
-        //your configuration goes here
-         barColor: green,
-         lineWidth: 4,
-         lineCap: "round",
-         scaleColor: black,
-         trackColor: black,
-         animate: false
+
+	$('.chart').waypoint(function() {
+          $(this).easyPieChart({
+             animate: 2000,
+	         barColor: green,
+	         lineWidth: 6,
+	         lineCap: "round",
+	         scaleColor: black,
+	         trackColor: black
+          });
+        }, {
+          triggerOnce: true,
+          offset: 'bottom-in-view'
     });
 
+    var config = { init:false};
+	window.scrollReveal = new scrollReveal(config);
+	window.onload = function () { scrollReveal.init() }
+    
     $('#Grid').mixitup();
+
     $('.parallax').scrolly({bgParallax: true});
 
-    	var config = { init:false};
-    	window.scrollReveal = new scrollReveal(config);
- 		window.onload = function () { scrollReveal.init() }
+ 	$('.navbar-collapse').waypoint(function(direction){
+ 		// $('.navbar').css({ background: 'transparent' });
+ 		$('.navbar').removeClass('navbar-bg');
+ 		$('.navbar .container').removeClass('remove-mt');
+ 	});
+
+ 	$('.navbar-collapse').waypoint(function(direction){
+ 		$('.navbar').addClass('navbar-bg');
+ 		$('.navbar .container').addClass('remove-mt');
+ 	});
 	/*----------- change class when scroll ----------*/
 	// $('.chart').data('easyPieChart').disableAnimation();
-	$('#about-content').waypoint(function() {
-
-			
-	});
 
 	// $('#about-content').waypoint(function(direction) {
 	//   $('.navbar-nav li').removeClass('active');
@@ -91,11 +104,8 @@ $(document).ready(function () {
 	var $root = $('html, body');
 
 	$('.navbar-nav li a').click(function () {
-
 	    $root.animate({
-
 	        scrollTop: $($.attr(this, 'href')).offset().top
-
 	    }, 900);
 
 	    return false;
@@ -105,9 +115,7 @@ $(document).ready(function () {
 	var $root = $('html, body');
 
 	$('.banner a').click(function () {
-
 	    $root.animate({
-
 	        scrollTop: $($.attr(this, 'href')).offset().top
 
 	    }, 900);
