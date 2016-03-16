@@ -21,12 +21,12 @@ $(document).ready(function () {
           offset: 'bottom-in-view'
     });
 
-    var config = { init:false};
-    window.scrollReveal = new scrollReveal(config);
-    window.onload = function () { scrollReveal.init() }
+    // var config = { init:false};
+    // window.scrollReveal = new scrollReveal(config);
+    // window.onload = function () { scrollReveal.init() }
     
-    $('#Grid').mixitup();
-
+    $('#grid').mixitup();
+    
     $('.parallax').scrolly({bgParallax: true});
 
     $('.navbar-collapse').waypoint(function(direction){
@@ -57,52 +57,6 @@ $(document).ready(function () {
             }
     }).resize();
 
-    /*----------- change class when scroll ----------*/
-    // $('.chart').data('easyPieChart').disableAnimation();
-
-    // $('#about-content').waypoint(function(direction) {
-    //   $('.navbar-nav li').removeClass('active');
-    //   $('.about').addClass('active');
-    // });
-
-    // $('#portfolio-content').waypoint(function(direction) {
-    //  $('.navbar-nav li').removeClass('active');
-    //  $('.portfolio').addClass('active');
-    // });
-
-    // $('#contact-content').waypoint(function(direction) {
-    //   $('.navbar-nav li').removeClass('active');
-    //   $('.contact').addClass('active');
-    // });
-
-    // $('section').waypoint(function() {
-    //   $('ul li').removeClass('active');
-    //   var currentIndex = $('div').index($(this));
-    //   $('ul li:eq(' + currentIndex + ')').addClass('active');
-    // },
-    // {
-    //   offset: 'bottom-in-view'
-    // });
-
-    // $(window).scroll(function() {
-    //     var windscroll = $(window).scrollTop();
-    //     if (windscroll >= 100) {
-    //         $('section').each(function(i) {
-    //             if ($(this).position().top <= windscroll - 20) {
-    //                 $('nav li.active').removeClass('active');
-    //                 $('nav li').eq(i).addClass('active');
-    //             }
-    //         });
-
-    //     } else {
-
-    //         $('nav').removeClass('fixed');
-    //         $('nav li.active').removeClass('active');
-    //         $('nav li:first').addClass('active');
-    //     }
-
-    // }).scroll();
-    
     /*--------- navbar effect ------------*/
     
     var topMenu = $(".navbar-nav"),
@@ -117,7 +71,7 @@ $(document).ready(function () {
 
     /*--------- typed text ------------*/
     $(".site-sub-title").typed({
-        strings: ["Front End Developer", "Web Designer"],
+        strings: ["Front End Developer", "UI / UX Designer", "Beer lover"],
         typeSpeed: 100,
         loop: true
     });
