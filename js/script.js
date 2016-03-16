@@ -5,7 +5,7 @@ $(document).ready(function () {
     var black ="#2f3238"; 
 
     var navbar = $('.navbar-default');
-    var hero = $('.banner');
+    var banner = $('.banner');
 
     $('.chart').waypoint(function() {
           $(this).easyPieChart({
@@ -25,8 +25,16 @@ $(document).ready(function () {
     // window.scrollReveal = new scrollReveal(config);
     // window.onload = function () { scrollReveal.init() }
     
-    $('#grid').mixitup();
-    
+    $('#grid').mixItUp({
+        load: {
+            sort: 'random'
+        },
+        animation: {
+            effects: 'fade rotateY(-10deg)',
+            easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+        }
+    });
+
     $('.parallax').scrolly({bgParallax: true});
 
     $('.navbar-collapse').waypoint(function(direction){
@@ -50,11 +58,11 @@ $(document).ready(function () {
     }
 
     $(window).resize(function() {
-            if (hero.length > 0 ) {
-                hero.height($( window ).height());
-            } else if (hero.length > 0) {
-                hero.height($( window ).height() * 0.7);
-            }
+        if (banner.length > 0 ) {
+            banner.height($( window ).height());
+        } else if (banner.length > 0) {
+            banner.height($( window ).height() * 0.7);
+        }
     }).resize();
 
     /*--------- navbar effect ------------*/

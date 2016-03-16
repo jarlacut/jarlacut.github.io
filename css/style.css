@@ -289,6 +289,34 @@ p {
   width: 100%;
 }
 
+#grid .work-caption {
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  z-index: 2;
+}
+
+#grid .mix:hover .work-caption {
+  opacity: 1;
+  top: 35%;
+}
+
+#grid .work-caption h3 {
+  color: #fff;
+  margin: 0 auto 10px;
+}
+
+#grid .work-caption p {
+  color: #ea6153;
+}
 .controls ul {
   margin: 0 auto 70px;
   text-align: center;
