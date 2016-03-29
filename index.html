@@ -23,11 +23,11 @@
     <![endif]-->
     
 </head>
-<body>
+<body id="home">
 
     <!-- Start Navigation -->
 
-    <div class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
+    <header class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,15 +40,15 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="home-content"><a href="#home-content">Home</a></li>
-            <li class="about"><a href="#about-content">About</a></li>
-            <li class="portfolio"><a href="#portfolio-content">Portfolio</a></li>
-            <li class="resume"><a href="#experience-content">Resume</a></li>
-            <li class="contact"><a href="#contact-content">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
         </div>
-    </div><!-- navbar -->
+    </header><!-- navbar -->
 
     <div class="banner text-center parallax">
         <div class="site-caption">
@@ -60,7 +60,7 @@
     </div><!-- banner -->
 
     <div class="clearfix"></div>
-    <div id="about-content" class="section">
+    <section id="about" class="section">
         <div class="container">
             <div class="about-desc col-md-12 push-top60">
                 <div class="col-md-5 prof-pic pull-left">
@@ -109,9 +109,9 @@
                 </div>
             </div><!-- skills -->
         </div>
-    </div><!-- about -->
+    </section><!-- about -->
 
-    <div id="portfolio-content" class="section section-alt">
+    <section id="portfolio" class="section section-alt">
         <h2 class="text-center">PORTFOLIO</h2>
         <div class="border"></div>
         <div class="controls push-top60">
@@ -225,9 +225,9 @@
                 <a href=""></a>
             </div>
         </div>
-    </div><!-- portfolio -->
+    </section><!-- portfolio -->
 
-    <div id="experience-content" class="section">
+    <section id="experience" class="section">
         <div class="container">
             <h2 class="text-center">Resume</h2>
             <div class="border"></div>
@@ -252,6 +252,29 @@
                             <div class="panel-body">
                                 <p>Responsible for implementing interface designs to frontend for use in Ruby on Rails applications.</p>
                                 <p>Tested frontend code in multiple browsers to ensure cross-browser and mobile compatability.</p>
+                            </div>
+                        </div><!-- collapse -->
+                    </div><!-- panel -->
+                </div><!-- work item -->
+                <div class="work-item">
+                    <div class="col-md-2 work-year">
+                        <span>2014 - 2016</span>
+                        <div class="work-btn">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#work-freelance" aria-expanded="true" aria-controls="work-freelance"></a>
+                        </div>
+                    </div>
+                    <div class="panel panel-default col-md-10">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#work-freelance" aria-expanded="true" aria-controls="work-freelance">
+                                    Web Designer / Front end Developer - Freelance
+                                </a>
+                            </h4>
+                        </div><!-- heading -->
+                        <div id="work-freelance" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>Responsible for creating web designs.</p>
+                                <p>Convert PSD to Wordpress.</p>
                             </div>
                         </div><!-- collapse -->
                     </div><!-- panel -->
@@ -303,13 +326,13 @@
                 </div><!-- work item -->
             </div><!-- panel group -->
         </div>
-    </div><!-- experience -->
+    </section><!-- experience -->
     
-    <section id="contact-content" class="section section-alt">
+    <section id="contact" class="section section-alt">
         <div class="container">
             <h2 class="text-center">CONTACT</h2>
             <div class="border"></div>
-                <div class="text-center message">
+                <div class="text-center message push-top60">
                     <p>I am available for freelance! <br>
                         Drop me a message.
                     </p>
@@ -318,16 +341,41 @@
                 </div>
         </div>
     </section>
-    <div class="footer">
-        <div class="container text-center push-top60">
-            <a data-scrollReveal='enter after 0.10s' href=""><img src="images/fb-icon.png"></a>
-            <a data-scrollReveal='enter after 0.30s'href=""><img src="images/twitter-icon.png"></a>
-            <a data-scrollReveal='enter after 0.60s'href=""><img src="images/google-icon.png"></a>
-            <a data-scrollReveal='enter after 0.90s' href=""><img src="images/linkedin-icon.png"></a>
-            <p class="push-top40">Copyright © 2014 jarlacaut</p>
-            <p>All rights Reserved</p>
+    <footer>
+        <div class="container text-center">
+            <ul class="social-icons">
+                <li>
+                    <div class="item">
+                        <a href="https://www.facebook.com/jarl.acut" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="https://ph.linkedin.com/in/jarl-acut-50537577" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul><!-- social-icons -->
+            <p>© 2016 Jarl Acut. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
     <p class="back-top">
         <a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a>
     </p>
@@ -343,8 +391,5 @@
     <script src='js/query-loader.js'></script>
     <script src="js/waypoints.js"></script> 
     <script src="js/typed.js"></script> 
-    <!-- <script type="text/javascript">
-         QueryLoader.init({});
-    </script> -->
 </body>
 </html>
