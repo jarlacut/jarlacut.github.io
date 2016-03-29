@@ -1,0 +1,33 @@
+{
+  "files": [{
+    "source": "js/jquery.mixitup.js",
+    "type": "SCRIPT",
+    "size": 50,
+    "stopExecution": false
+  }, {
+    "source": "js/bootstrap.min.js",
+    "type": "SCRIPT",
+    "size": 37,
+    "stopExecution": true
+  }, {
+    "source": "js/jquery.scrolly.js",
+    "type": "SCRIPT",
+    "size": 3
+  }, {
+    "source": "js/waypoints.js",
+    "type": "SCRIPT",
+    "size": 17
+  }, {
+    "source": "images/banner_new.png",
+    "type": "IMAGE",
+    "size": 758
+  }, {
+    "source": "images/image_profile.jpg",
+    "type": "IMAGE",
+    "size": 151
+  }, {
+    "source": "images/works_cestca.png",
+    "type": "IMAGE",
+    "size": 216
+  }]
+}

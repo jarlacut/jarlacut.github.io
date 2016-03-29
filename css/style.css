@@ -485,14 +485,16 @@ footer {
 
 
 /* loader */
-.QOverlay {
-background-color: #2a2c31;
-z-index: 9999;
-}
 
-.QLoader {
-background-color: #ffffff;
-height: 1px;
+#loader {
+  background: #2a2c31;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2147483647;
 }
 
 /* cursor effect */
