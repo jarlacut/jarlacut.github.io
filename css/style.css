@@ -487,7 +487,7 @@ footer {
 /* loader */
 
 #loader {
-  background: #2a2c31;
+  background: #2a2c31 url("../images/477.gif") no-repeat center;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -495,6 +495,15 @@ footer {
   top: 0;
   width: 100%;
   z-index: 2000;
+}
+
+#nprogress .bar {
+  background: #ea6153 !important;
+  height: 5px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ea6153, 0 0 5px #ea6153 !important;
 }
 
 /* cursor effect */

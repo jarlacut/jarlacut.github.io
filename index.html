@@ -406,12 +406,7 @@
             stopExecution:true,
             onComplete: function () {
                 NProgress.done(true);
-                setTimeout(function(){
-                    $("#loader").animate({
-                        opacity:1
-                    },'slow');
-                },2000);
-                $('#loader').hide();
+                $("#loader").delay(2000).fadeOut();
                 console.log("All the assets are loaded!");
             },
             onElementLoaded: function ( obj, elm ){
