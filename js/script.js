@@ -20,10 +20,6 @@ $(document).ready(function () {
           triggerOnce: true,
           offset: 'bottom-in-view'
     });
-
-    // var config = { init:false};
-    // window.scrollReveal = new scrollReveal(config);
-    // window.onload = function () { scrollReveal.init() }
     
     $('#grid').mixItUp({
         load: {
@@ -36,13 +32,6 @@ $(document).ready(function () {
     });
 
     $('.parallax').scrolly({bgParallax: true});
-
-    $('.navbar-collapse').waypoint(function(direction){
-        // $('.navbar').css({ background: 'transparent' });
-        $('.navbar').removeClass('navbar-bg');
-        $('.navbar .container').removeClass('remove-mt');
-    });
-
 
     if (navbar.length > 0) {
         $(window).scroll(function() {
@@ -64,18 +53,6 @@ $(document).ready(function () {
             banner.height($( window ).height() * 0.7);
         }
     }).resize();
-
-    /*--------- navbar effect ------------*/
-    
-    var topMenu = $(".navbar-nav"),
-    topMenuHeight = topMenu.outerHeight()+15,
-    // All list items
-    menuItems = topMenu.find(".navbar-nav li"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
 
     /*--------- typed text ------------*/
     $(".site-sub-title").typed({
@@ -102,30 +79,6 @@ $(document).ready(function () {
 
         return false;
     });
-
-    /*--------- for contact button to contact section ------------*/
-    var $root = $('html, body');
-
-    $('.banner a').click(function () {
-        $root.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-
-        }, 900);
-
-        return false;
-    });
-
-    /*----------- home menu --------------- */
-    $(function () {
-        // scroll body to 0px on click
-        $('.home-content').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 1000);
-            return false;
-        });
-    });
-
 
     // hide #back-top first
     $(".back-top").hide();
