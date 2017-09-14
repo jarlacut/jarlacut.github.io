@@ -26,11 +26,16 @@
 			<div class="slides">
 				<section>Image Optimization Tips</section>
 
+        <section>
+          The main reason why it's so important to optimize your images is because 90% of most websites are graphics dependent and therefore there are a lot of image files. Leaving these images uncompressed and in the wrong format can drastically slow down your web page load times.
+        </section>
+
 				<section>
 				  <ul>
             <li>Image File Type Options</li>
-				    <li>Optimize Images</li>
+				    <li>Optimize Images to pass GTMETRIX</li>
             <li>Reduce External HTTP Requests</li>
+            <li>Serve scaled images</li>
 				  </ul>
 				</section>
 
@@ -65,6 +70,47 @@
           <section>
             <p>PNG VS SVG</p>
             <img src="images/png-vs-svg.png" alt="">
+          </section>
+        </section>
+
+        <section>
+          <section>Optimize Images to pass GTMETRIX
+            <p>The images you create in programs like Photoshop and Illustrator look amazing but often the file sizes are very large. This is because the images are made in a format which makes them easier to manipulate in different ways.</p>
+          </section>
+          <section>
+            <p>
+              Image compression apps are the easiest way to reduce file size of images. These types of tools remove hidden data in the image file like additional color profiles and metadata (like geolocation of where the photograph was taken) that aren’t needed.
+              These tools provide a quick and easy way to reduce files size without losing any image quality.
+            </p>
+            <ul>
+              <li>TinyJPG | TinyPNG</li>
+              <li>Compressor.io</li>
+              <li>Kraken</li>
+              <li>ImageOptimizer</li>
+            </ul>
+          </section>
+          <section>
+            Example: <a href="http://jarlacut.github.io/test.html">http://jarlacut.github.io/test.html</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            Reduce External HTTP Requests
+            <p>When you combine most or all of your images into a sprite, you turn multiple images requests into just one. Then you just use the background-image CSS property to display the section of the image you need.</p>
+          </section>
+          <section>
+            Example: <a href="http://jarlacut.github.io/sprites.html">http://jarlacut.github.io/sprites.html</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            Serve scaled images
+            <p>Serving appropriately-sized images can save many bytes of data and improve the performance of your webpage, especially on low-powered (eg. mobile) devices.</p>
+          </section>
+          <section>
+            Example: <a href="http://jarlacut.github.io/scaled.html">http://jarlacut.github.io/scaled.html</a>
           </section>
         </section>
 			</div>
